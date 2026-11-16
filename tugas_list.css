@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* main box */
+.section-box {
+    background-color: #ffffc5;
+    padding: 10px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+.section-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* inner container */
+.inner-container {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 4px solid #ff69b4; 
+}
+
+/* List buah */
+ol.buah-list {
+    margin: 0;
+    padding-left: 25px;
+}
+
+ol.buah-list li {
+    background-color: #a2ffb2;
+    padding: 5px 10px;
+    margin-bottom: 4px;
+    border: 2px solid #317b3d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* hover buah */
+ol.buah-list li:hover {
+    background-color: #ffe1ab;
+    color: #000;
+    border: 2px solid #e4b764;
+    transform: translateX(6px);
+}
+
+/* list lorem */
+ul.lorem-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+ul.lorem-list li {
+    background-color: #f2b6b6;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border: 2px solid #cc6464;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* hover lorem */
+ul.lorem-list li:hover {
+    background-color: #76C0EC;
+    color: #111827;
+    border: 2px solid #367fa9;
+    transform: translateX(6px);
+}
+
+/* list icon */
+ul.icon-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+ul.icon-list li {
+    background-color: #fff8b4;
+    padding: 6px 10px;
+    margin-bottom: 4px;
+    border: 2px solid #ded050;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+ul.icon-list li i {
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.25s ease;
+}
+
+/* hover icon */
+ul.icon-list li:hover {
+    background-color: #FF95A5;
+    color: #000;
+    border: 2px solid #ba4254;
+    transform: translateX(6px);
+}
+
+ul.icon-list li:hover i {
+    transform: scale(1.2);
+}

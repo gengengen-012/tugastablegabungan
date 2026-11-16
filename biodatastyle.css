@@ -1,0 +1,363 @@
+body{
+    background-image: url(bbgg.jpg);
+    background-color: #F9E8A2;
+    background-size: cover;
+    background-position: center;
+}
+
+#load-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #B4E1EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* very front page */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* transition type */
+}
+
+#load-screen h2{
+    color: #78A4CB;
+    background-color: #B4E1EB;
+}
+
+.loader {
+    /* border: 16px solid #f3f3f3; */
+    /* border-top: 16px solid #3498db; */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.loader img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h2{
+    color: #F9E8A2;
+    background-color: #472F26;
+    text-align: center;
+}
+h1{
+    color: #472F26;
+    background-color: #BBD3E0;
+    text-align: center;
+}
+
+h4{
+    color: #472F26;
+    background-color: #BBD3E0;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: #78A4CB;
+    color: #000000;
+    padding: 30px;
+    border: #472F26;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.altering-img{
+    height: 230px;
+    width: 230px;
+    border-radius: 20%;
+    padding: 5px #78A4CB;
+    background: url(img/uncanniness.png);
+    background-size: cover;
+    background-position: center;   
+    transition: ease 0.3s;
+}
+
+.altering-img:hover{
+    background: url(img/shopping.png);
+    background-size: cover;
+    background-position: center;    
+}
+
+.kitchen{
+    width: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    display: grid;
+    clear: both;
+    padding: 20pt;
+}
+
+.lunchbox{
+    background-color: #BBD3E0;
+    border: 8px solid #FEF0B6;
+    border-radius: 40px;
+    padding: 20pt 10pt 10pt 10pt;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.lunchbox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px #000000;
+}
+
+.fotoburger{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;  
+}
+
+.fotonoodle{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.fotobrisket{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.barista{
+    width: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    display: grid;
+    clear: both;
+    padding: 20pt;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.drinkbox{
+    background-color: #FEF0B6;
+    border: 8px solid #BBD3E0;
+    border-radius: 40px;
+    padding: 20pt 10pt 10pt 10pt;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.drinkbox:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px #000000;
+}
+
+.fotomatcha{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotochagee{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotocoffee{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.activities{
+    width: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    display: grid;
+    clear: both;
+    padding: 20pt;
+}
+
+.activity{
+    background-color: #BBD3E0;
+    border: 8px solid #FEF0B6;
+    border-radius: 40px;
+    padding: 20pt 10pt 10pt 10pt;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.activity:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px #000000;
+}
+
+.fotobasket{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #95BDD7;
+}
+
+.fotodraw{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #95BDD7;
+}
+
+.fotomusic{
+    height: 260px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #95BDD7;
+}
+
+.vacay{
+    width: auto;
+    margin: 30px auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    display: grid;
+    clear: both;
+    padding: 20pt;
+}
+
+.trip{
+    background-color: #FEF0B6;
+    border: 8px solid #BBD3E0;
+    border-radius: 40px;
+    padding: 20pt 10pt 10pt 10pt;
+    text-align: center;
+    font-size: 15pt;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.trip:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px #000000;
+}
+
+.fotoitaly{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotoharbin{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotonyc{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotogreece{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotosapporo{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.fotoparis{
+    height: 260px;
+    width: 250px;
+    object-fit: auto;
+    border-radius: 10%;
+}
+
+.MusicBox{
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FEF0B6;
+    border: 10px solid #BBD3E0;
+    border-radius: 35px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20pt;
+    color: #246081;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.NamaLagu{
+    font-size: 14pt;
+    margin-top: 10px;
+}
+.MusicBox hover{
+    transform: translateY(-15px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.MusicBox audio{
+    width: 100%;
+}
+.MusicBox img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 360px;
+    border: 3px solid pink;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: muter 15s linear infinite;
+}
+.albumcover img:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 0 50px #000000;
+}
+@keyframes muter{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.AlbumCover{
+    padding: 10px;
+}
